@@ -11,6 +11,7 @@ from wagtail.fields import StreamField
 from wagtail.models import Page
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
+from wagtail_headless_preview.models import HeadlessPreviewMixin
 
 from bakerydemo.base.blocks import BaseStreamBlock
 
@@ -82,7 +83,7 @@ class BreadType(models.Model):
         verbose_name_plural = "Bread types"
 
 
-class BreadPage(Page):
+class BreadPage(HeadlessPreviewMixin, Page):
     """
     Detail view for a specific bread
     """
@@ -146,7 +147,7 @@ class BreadPage(Page):
     parent_page_types = ['BreadsIndexPage']
 
 
-class BreadsIndexPage(Page):
+class BreadsIndexPage(HeadlessPreviewMixin, Page):
     """
     Index page for breads.
 

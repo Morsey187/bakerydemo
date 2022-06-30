@@ -10,6 +10,7 @@ from wagtail.fields import StreamField
 from wagtail.admin.panels import FieldPanel, InlinePanel
 from wagtail.models import Orderable, Page
 from wagtail.search import index
+from wagtail_headless_preview.models import HeadlessPreviewMixin
 
 from bakerydemo.base.blocks import BaseStreamBlock
 from bakerydemo.locations.choices import DAY_CHOICES
@@ -123,7 +124,7 @@ class LocationsIndexPage(Page):
     ]
 
 
-class LocationPage(Page):
+class LocationPage(HeadlessPreviewMixin, Page):
     """
     Detail for a specific bakery location.
     """

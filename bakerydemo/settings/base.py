@@ -69,6 +69,8 @@ INSTALLED_APPS = [
     "grapple",
     "graphene_django",
 
+    "wagtail_headless_preview",
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -198,6 +200,13 @@ WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
     ("ar", "العربيّة"),
 ]
 
+WAGTAIL_HEADLESS_PREVIEW = {
+    "CLIENT_URLS": {
+        "default": "http://localhost:3000/api/preview",
+    },
+    "LIVE_PREVIEW": True,  # set to True to enable live preview functionality
+}
+
 # Grapple config:
 GRAPHENE = {"SCHEMA": "grapple.schema.schema"}
 GRAPPLE = {
@@ -207,5 +216,4 @@ GRAPPLE = {
         "breads",
         "locations",
     ],
-    
 }

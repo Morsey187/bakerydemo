@@ -16,6 +16,7 @@ from wagtail.models import Collection, Page
 from wagtail.contrib.forms.models import AbstractEmailForm, AbstractFormField
 from wagtail.search import index
 from wagtail.snippets.models import register_snippet
+from wagtail_headless_preview.models import HeadlessPreviewMixin
 
 from .blocks import BaseStreamBlock
 
@@ -100,7 +101,7 @@ class FooterText(models.Model):
         verbose_name_plural = 'Footer Text'
 
 
-class StandardPage(Page):
+class StandardPage(HeadlessPreviewMixin, Page):
     """
     A generic content page. On this demo site we use it for an about page but
     it could be used for any type of page content that only needs a title,
@@ -128,7 +129,7 @@ class StandardPage(Page):
     ]
 
 
-class HomePage(Page):
+class HomePage(HeadlessPreviewMixin, Page):
     """
     The Home Page. This looks slightly more complicated than it is. You can
     see if you visit your site and edit the homepage that it is split between
@@ -280,7 +281,7 @@ class HomePage(Page):
         return self.title
 
 
-class GalleryPage(Page):
+class GalleryPage(HeadlessPreviewMixin, Page):
     """
     This is a page to list locations from the selected Collection. We use a Q
     object to list any Collection created (/admin/collections/) even if they
@@ -336,7 +337,7 @@ class FormField(AbstractFormField):
     page = ParentalKey('FormPage', related_name='form_fields', on_delete=models.CASCADE)
 
 
-class FormPage(AbstractEmailForm):
+class FormPage(AbstractEmailForm, HeadlessPreviewMixin):
     image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,

@@ -14,6 +14,7 @@ from wagtail.admin.panels import FieldPanel, InlinePanel
 from wagtail.fields import StreamField
 from wagtail.models import Page, Orderable
 from wagtail.search import index
+from wagtail_headless_preview.models import HeadlessPreviewMixin
 
 from bakerydemo.base.blocks import BaseStreamBlock
 
@@ -46,7 +47,7 @@ class BlogPageTag(TaggedItemBase):
     content_object = ParentalKey('BlogPage', related_name='tagged_items', on_delete=models.CASCADE)
 
 
-class BlogPage(Page):
+class BlogPage(HeadlessPreviewMixin, Page):
     """
     A Blog Page
 
@@ -128,7 +129,7 @@ class BlogPage(Page):
     subpage_types = []
 
 
-class BlogIndexPage(RoutablePageMixin, Page):
+class BlogIndexPage(HeadlessPreviewMixin, RoutablePageMixin, Page):
     """
     Index page for blogs.
     We need to alter the page model's context to return the child page objects,
