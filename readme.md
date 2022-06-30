@@ -1,3 +1,5 @@
+This is a fork of the wagtail bakery demo running wagtail_grapple and wagtail_headless_preview.
+
 # Wagtail demo project
 
 This is a demonstration project for the amazing [Wagtail CMS](https://github.com/wagtail/wagtail).
