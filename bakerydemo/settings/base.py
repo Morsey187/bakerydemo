@@ -65,6 +65,10 @@ INSTALLED_APPS = [
     'wagtailfontawesome',
     'debug_toolbar',
 
+    # Wagtail-grapple
+    "grapple",
+    "graphene_django",
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -193,3 +197,15 @@ WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
     ("de", "Deutsch"),
     ("ar", "العربيّة"),
 ]
+
+# Grapple config:
+GRAPHENE = {"SCHEMA": "grapple.schema.schema"}
+GRAPPLE = {
+    "APPS": [
+        "base",
+        "blog",
+        "breads",
+        "locations",
+    ],
+    
+}
