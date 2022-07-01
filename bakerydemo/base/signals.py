@@ -10,7 +10,11 @@ logger = logging.getLogger(__name__)
 
 def page_revalidation(**kwargs):
     instance = kwargs['instance']
-    url = f"http://localhost:3000/api/revalidate?secret={settings.MY_SECRET_NEXT_JS_REVALIDATION_TOKEN}&urlpath={instance.url}"
+    url_path = instance.url
+    if instance.url != '/':
+        url_path = instance.url.rstrip("/")
+
+    url = f"http://localhost:3000/api/revalidate?secret={settings.MY_SECRET_NEXT_JS_REVALIDATION_TOKEN}&urlpath={url_path}"
 
     try:
         response = requests.get(url)
@@ -22,6 +26,3 @@ def page_revalidation(**kwargs):
 
 # Register a receiver
 page_published.connect(page_revalidation)
-
-
-
