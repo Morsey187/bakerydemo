@@ -1655,7 +1655,7 @@
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$720000$scCt6yXoSAK9PNzx1FLPPX$ylAMNDdAOgWK7rReoVDnrCAUwkSlivl1UiH+VJKg4kw=",
-      "last_login": "2024-09-12T13:21:57.685Z",
+      "last_login": "2024-09-12T13:36:15.106Z",
       "is_superuser": true,
       "username": "admin",
       "first_name": "Admin",
@@ -12755,7 +12755,7 @@
     "fields": {
       "collection": 3,
       "title": "Baking Soda",
-      "file": "original_images/bakingsoda.jpg",
+      "file": "original_images/bakingsoda.webp",
       "width": 1024,
       "height": 678,
       "created_at": "2019-03-22T06:13:09.773Z",
@@ -12764,8 +12764,8 @@
       "focal_point_y": 319,
       "focal_point_width": 601,
       "focal_point_height": 570,
-      "file_size": 87095,
-      "file_hash": ""
+      "file_size": 42086,
+      "file_hash": "4b74a7d0e602e7b46f3442794891129f93e7dcc6"
     }
   },
   {
