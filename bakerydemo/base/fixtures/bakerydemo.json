@@ -175,22 +175,6 @@
   },
   {
     "model": "blog.blogpagetag",
-    "pk": 52,
-    "fields": {
-      "tag": 3,
-      "content_object": 62
-    }
-  },
-  {
-    "model": "blog.blogpagetag",
-    "pk": 53,
-    "fields": {
-      "tag": 4,
-      "content_object": 62
-    }
-  },
-  {
-    "model": "blog.blogpagetag",
     "pk": 89,
     "fields": {
       "tag": 8,
@@ -275,6 +259,22 @@
     "fields": {
       "tag": 7,
       "content_object": 74
+    }
+  },
+  {
+    "model": "blog.blogpagetag",
+    "pk": 103,
+    "fields": {
+      "tag": 3,
+      "content_object": 62
+    }
+  },
+  {
+    "model": "blog.blogpagetag",
+    "pk": 104,
+    "fields": {
+      "tag": 4,
+      "content_object": 62
     }
   },
   {
@@ -1655,7 +1655,7 @@
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$720000$scCt6yXoSAK9PNzx1FLPPX$ylAMNDdAOgWK7rReoVDnrCAUwkSlivl1UiH+VJKg4kw=",
-      "last_login": "2024-09-12T12:55:03.619Z",
+      "last_login": "2024-09-12T13:21:57.685Z",
       "is_superuser": true,
       "username": "admin",
       "first_name": "Admin",
@@ -3835,6 +3835,40 @@
       "content_changed": true,
       "deleted": false,
       "page": 74
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 118,
+    "fields": {
+      "content_type": ["blog", "blogpage"],
+      "label": "Tracking Wild Yeast",
+      "action": "wagtail.edit",
+      "data": {},
+      "timestamp": "2024-09-12T13:31:38.226Z",
+      "uuid": "d74f673f-d905-4625-aaa3-4d73474b319d",
+      "user": ["admin"],
+      "revision": 113,
+      "content_changed": true,
+      "deleted": false,
+      "page": 62
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 119,
+    "fields": {
+      "content_type": ["blog", "blogpage"],
+      "label": "Tracking Wild Yeast",
+      "action": "wagtail.publish",
+      "data": {},
+      "timestamp": "2024-09-12T13:31:38.254Z",
+      "uuid": "d74f673f-d905-4625-aaa3-4d73474b319d",
+      "user": ["admin"],
+      "revision": 113,
+      "content_changed": true,
+      "deleted": false,
+      "page": 62
     }
   },
   {
@@ -9957,6 +9991,76 @@
     }
   },
   {
+    "model": "wagtailcore.revision",
+    "pk": 113,
+    "fields": {
+      "content_type": ["blog", "blogpage"],
+      "base_content_type": ["wagtailcore", "page"],
+      "object_id": "62",
+      "created_at": "2024-09-12T13:31:38.211Z",
+      "user": ["admin"],
+      "object_str": "Tracking Wild Yeast",
+      "content": {
+        "pk": 62,
+        "path": "0001000200040001",
+        "depth": 4,
+        "numchild": 0,
+        "translation_key": "ef9c6173-919b-49ec-927e-96180337a91a",
+        "locale": 1,
+        "latest_revision": 44,
+        "live": true,
+        "has_unpublished_changes": false,
+        "first_published_at": "2019-02-10T16:26:58.040Z",
+        "last_published_at": "2023-09-01T16:55:13.710Z",
+        "live_revision": 44,
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "locked_at": null,
+        "locked_by": null,
+        "title": "Tracking Wild Yeast",
+        "draft_title": "Tracking Wild Yeast",
+        "slug": "wild-yeast",
+        "content_type": 14,
+        "url_path": "/home/blog/wild-yeast/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "latest_revision_created_at": "2023-09-01T16:55:13.675Z",
+        "alias_of": null,
+        "introduction": "Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (\"dimorphic\" means \"having two forms\").",
+        "image": 55,
+        "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p data-block-key=\\\"48x9r\\\">Yeasts are eukaryotic, single-celled microorganisms classified as members of the fungus kingdom. The yeast lineage[which?] originated hundreds of millions of years ago, and 1,500 species are currently identified.[1][2][3] They are estimated to constitute 1% of all described fungal species.[4] Yeasts are unicellular organisms which evolved from multicellular ancestors,[5] with some species having the ability to develop multicellular characteristics by forming strings of connected budding cells known as pseudohyphae or false hyphae.[6] Yeast sizes vary greatly, depending on species and environment, typically measuring 3\\u20134 \\u00b5m in diameter, although some yeasts can grow to 40 \\u00b5m in size.[7] Most yeasts reproduce asexually by mitosis, and many do so by the asymmetric division process known as budding.</p><h3 data-block-key=\\\"tyew1\\\">Contrast with Molds</h3><p data-block-key=\\\"u8r61\\\">Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (&quot;dimorphic&quot; means &quot;having two forms&quot;).<br/></p><p data-block-key=\\\"txg4a\\\">By fermentation, the yeast species Saccharomyces cerevisiae converts carbohydrates to carbon dioxide and alcohols \\u2013 for thousands of years the carbon dioxide has been used in baking and the alcohol in alcoholic beverages.[8] It is also a centrally important model organism in modern cell biology research, and is one of the most thoroughly researched eukaryotic microorganisms. Researchers have used it to gather information about the biology of the eukaryotic cell and ultimately human biology.[9] Other species of yeasts, such as Candida albicans, are opportunistic pathogens and can cause infections in humans. Yeasts have recently been used to generate electricity in microbial fuel cells,[10] and produce ethanol for the biofuel industry.<br/></p><p data-block-key=\\\"qjnxu\\\">Yeasts do not form a single taxonomic or phylogenetic grouping. The term &quot;yeast&quot; is often taken as a synonym for Saccharomyces cerevisiae,[11] but the phylogenetic diversity of yeasts is shown by their placement in two separate phyla: the Ascomycota and the Basidiomycota. The budding yeasts (&quot;true yeasts&quot;) are classified in the order Saccharomycetales,[12] within the phylum Ascomycota.<br/></p>\", \"id\": \"e015f74c-47d0-4631-b768-fa20e5ec1deb\"}, {\"type\": \"image_block\", \"value\": {\"image\": 39, \"caption\": \"Raised Yummy\", \"attribution\": \"Creative Commons\"}, \"id\": \"7e2a0b56-e8d7-46f1-920b-13a715dca209\"}]",
+        "subtitle": "The art of cultivating yeast",
+        "date_published": "2019-01-12",
+        "wagtail_admin_comments": [],
+        "blog_person_relationship": [
+          {
+            "pk": 2,
+            "sort_order": 0,
+            "page": 62,
+            "person": 1
+          }
+        ],
+        "tagged_items": [
+          {
+            "pk": null,
+            "tag": 3,
+            "content_object": 62
+          },
+          {
+            "pk": null,
+            "tag": 4,
+            "content_object": 62
+          }
+        ]
+      },
+      "approved_go_live_at": null
+    }
+  },
+  {
     "model": "wagtailcore.page",
     "pk": 1,
     "fields": {
@@ -10475,12 +10579,12 @@
       "numchild": 0,
       "translation_key": "ef9c6173-919b-49ec-927e-96180337a91a",
       "locale": 1,
-      "latest_revision": 44,
+      "latest_revision": 113,
       "live": true,
       "has_unpublished_changes": false,
       "first_published_at": "2019-02-10T16:26:58.040Z",
-      "last_published_at": "2023-09-01T16:55:13.710Z",
-      "live_revision": 44,
+      "last_published_at": "2024-09-12T13:31:38.234Z",
+      "live_revision": 113,
       "go_live_at": null,
       "expire_at": null,
       "expired": false,
@@ -10496,7 +10600,7 @@
       "seo_title": "",
       "show_in_menus": false,
       "search_description": "",
-      "latest_revision_created_at": "2023-09-01T16:55:13.675Z",
+      "latest_revision_created_at": "2024-09-12T13:31:38.211Z",
       "alias_of": null
     }
   },
@@ -12042,6 +12146,23 @@
     }
   },
   {
+    "model": "wagtailcore.modellogentry",
+    "pk": 53,
+    "fields": {
+      "content_type": ["wagtailimages", "image"],
+      "label": "Yeast",
+      "action": "wagtail.delete",
+      "data": {},
+      "timestamp": "2024-09-12T13:30:58.692Z",
+      "uuid": "fe1b351b-57f0-48c9-b3be-d10721b1323f",
+      "user": ["admin"],
+      "revision": null,
+      "content_changed": false,
+      "deleted": false,
+      "object_id": "21"
+    }
+  },
+  {
     "model": "wagtailredirects.redirect",
     "pk": 1,
     "fields": {
@@ -12283,25 +12404,6 @@
       "focal_point_width": null,
       "focal_point_height": null,
       "file_size": 247052,
-      "file_hash": ""
-    }
-  },
-  {
-    "model": "wagtailimages.image",
-    "pk": 21,
-    "fields": {
-      "collection": 2,
-      "title": "Yeast",
-      "file": "original_images/yeast.jpg",
-      "width": 1024,
-      "height": 682,
-      "created_at": "2019-02-21T07:50:10.793Z",
-      "uploaded_by_user": ["admin"],
-      "focal_point_x": null,
-      "focal_point_y": null,
-      "focal_point_width": null,
-      "focal_point_height": null,
-      "file_size": 122348,
       "file_hash": ""
     }
   },
@@ -12876,6 +12978,25 @@
     }
   },
   {
+    "model": "wagtailimages.image",
+    "pk": 55,
+    "fields": {
+      "collection": 2,
+      "title": "Yeast",
+      "file": "original_images/yeast.avif",
+      "width": 1024,
+      "height": 682,
+      "created_at": "2024-09-12T13:29:22.020Z",
+      "uploaded_by_user": ["admin"],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 14643,
+      "file_hash": "214c67da2b04efc27497219d23a03c8abb284a9d"
+    }
+  },
+  {
     "model": "wagtaildocs.document",
     "pk": 1,
     "fields": {
@@ -13256,8 +13377,8 @@
     "pk": 62,
     "fields": {
       "introduction": "Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (\"dimorphic\" means \"having two forms\").",
-      "image": 21,
-      "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p>Yeasts are eukaryotic, single-celled microorganisms classified as members of the fungus kingdom. The yeast lineage[which?] originated hundreds of millions of years ago, and 1,500 species are currently identified.[1][2][3] They are estimated to constitute 1% of all described fungal species.[4] Yeasts are unicellular organisms which evolved from multicellular ancestors,[5] with some species having the ability to develop multicellular characteristics by forming strings of connected budding cells known as pseudohyphae or false hyphae.[6] Yeast sizes vary greatly, depending on species and environment, typically measuring 3\\u20134 \\u00b5m in diameter, although some yeasts can grow to 40 \\u00b5m in size.[7] Most yeasts reproduce asexually by mitosis, and many do so by the asymmetric division process known as budding.</p><h3>Contrast with Molds</h3><p>Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (\\\"dimorphic\\\" means \\\"having two forms\\\").<br/></p><p>By fermentation, the yeast species Saccharomyces cerevisiae converts carbohydrates to carbon dioxide and alcohols \\u2013 for thousands of years the carbon dioxide has been used in baking and the alcohol in alcoholic beverages.[8] It is also a centrally important model organism in modern cell biology research, and is one of the most thoroughly researched eukaryotic microorganisms. Researchers have used it to gather information about the biology of the eukaryotic cell and ultimately human biology.[9] Other species of yeasts, such as Candida albicans, are opportunistic pathogens and can cause infections in humans. Yeasts have recently been used to generate electricity in microbial fuel cells,[10] and produce ethanol for the biofuel industry.<br/></p><p>Yeasts do not form a single taxonomic or phylogenetic grouping. The term \\\"yeast\\\" is often taken as a synonym for Saccharomyces cerevisiae,[11] but the phylogenetic diversity of yeasts is shown by their placement in two separate phyla: the Ascomycota and the Basidiomycota. The budding yeasts (\\\"true yeasts\\\") are classified in the order Saccharomycetales,[12] within the phylum Ascomycota.<br/></p>\", \"id\": \"e015f74c-47d0-4631-b768-fa20e5ec1deb\"}, {\"type\": \"image_block\", \"value\": {\"image\": 39, \"caption\": \"Raised Yummy\", \"attribution\": \"Creative Commons\"}, \"id\": \"7e2a0b56-e8d7-46f1-920b-13a715dca209\"}]",
+      "image": 55,
+      "body": "[{\"type\": \"paragraph_block\", \"value\": \"<p data-block-key=\\\"48x9r\\\">Yeasts are eukaryotic, single-celled microorganisms classified as members of the fungus kingdom. The yeast lineage[which?] originated hundreds of millions of years ago, and 1,500 species are currently identified.[1][2][3] They are estimated to constitute 1% of all described fungal species.[4] Yeasts are unicellular organisms which evolved from multicellular ancestors,[5] with some species having the ability to develop multicellular characteristics by forming strings of connected budding cells known as pseudohyphae or false hyphae.[6] Yeast sizes vary greatly, depending on species and environment, typically measuring 3\\u20134 \\u00b5m in diameter, although some yeasts can grow to 40 \\u00b5m in size.[7] Most yeasts reproduce asexually by mitosis, and many do so by the asymmetric division process known as budding.</p><h3 data-block-key=\\\"tyew1\\\">Contrast with Molds</h3><p data-block-key=\\\"u8r61\\\">Yeasts, with their single-celled growth habit, can be contrasted with molds, which grow hyphae. Fungal species that can take both forms (depending on temperature or other conditions) are called dimorphic fungi (&quot;dimorphic&quot; means &quot;having two forms&quot;).<br/></p><p data-block-key=\\\"txg4a\\\">By fermentation, the yeast species Saccharomyces cerevisiae converts carbohydrates to carbon dioxide and alcohols \\u2013 for thousands of years the carbon dioxide has been used in baking and the alcohol in alcoholic beverages.[8] It is also a centrally important model organism in modern cell biology research, and is one of the most thoroughly researched eukaryotic microorganisms. Researchers have used it to gather information about the biology of the eukaryotic cell and ultimately human biology.[9] Other species of yeasts, such as Candida albicans, are opportunistic pathogens and can cause infections in humans. Yeasts have recently been used to generate electricity in microbial fuel cells,[10] and produce ethanol for the biofuel industry.<br/></p><p data-block-key=\\\"qjnxu\\\">Yeasts do not form a single taxonomic or phylogenetic grouping. The term &quot;yeast&quot; is often taken as a synonym for Saccharomyces cerevisiae,[11] but the phylogenetic diversity of yeasts is shown by their placement in two separate phyla: the Ascomycota and the Basidiomycota. The budding yeasts (&quot;true yeasts&quot;) are classified in the order Saccharomycetales,[12] within the phylum Ascomycota.<br/></p>\", \"id\": \"e015f74c-47d0-4631-b768-fa20e5ec1deb\"}, {\"type\": \"image_block\", \"value\": {\"image\": 39, \"caption\": \"Raised Yummy\", \"attribution\": \"Creative Commons\"}, \"id\": \"7e2a0b56-e8d7-46f1-920b-13a715dca209\"}]",
       "subtitle": "The art of cultivating yeast",
       "date_published": "2019-01-12"
     }
