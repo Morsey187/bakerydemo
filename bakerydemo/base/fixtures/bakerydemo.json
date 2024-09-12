@@ -12774,7 +12774,7 @@
     "fields": {
       "collection": 3,
       "title": "Boston Cream Pie",
-      "file": "original_images/bostoncream.jpg",
+      "file": "original_images/bostoncream.png",
       "width": 1024,
       "height": 683,
       "created_at": "2019-03-22T06:29:18.751Z",
@@ -12783,8 +12783,8 @@
       "focal_point_y": 291,
       "focal_point_width": 923,
       "focal_point_height": 582,
-      "file_size": 117057,
-      "file_hash": ""
+      "file_size": 543033,
+      "file_hash": "2b09e1b27b07364ca768c6f8f1ad26a1c9e93dde"
     }
   },
   {
